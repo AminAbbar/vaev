@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS testingAmin;
+
+USE testingAmin;
+
 -- Just the users yk
 CREATE TABLE users(
     id VARCHAR(36) NOT NULL UNIQUE,
@@ -24,21 +28,20 @@ CREATE TABLE domains(
     added_on DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-
 -- Reversal attempts / Suspicious activity
 CREATE TABLE suspicious_activity(
     id VARCHAR(36) NOT NULL UNIQUE,
     info VARCHAR(64) NOT NULL,
     ip VARCHAR(15) NOT NULL,
     attempted_on DATETIME DEFAULT CURRENT_TIMESTAMP
-)
+);
 
 -- Logs of zombie activity
 CREATE TABLE zombie_activity(
     id VARCHAR(36) NOT NULL UNIQUE,
     info VARCHAR(64) NOT NULL,
     added_on DATETIME DEFAULT CURRENT_TIMESTAMP
-)
+);
 
 -- Due actions for zombies
 CREATE TABLE actions(

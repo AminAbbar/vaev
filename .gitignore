@@ -1,2 +1,4 @@
 *.css
 *.min.*
+node_modules
+.vs

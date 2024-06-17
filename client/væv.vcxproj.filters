@@ -39,9 +39,6 @@
     <ClCompile Include="api.cpp">
       <Filter>Header Files\api</Filter>
     </ClCompile>
-    <ClCompile Include="infecter\infecter.cpp">
-      <Filter>Header Files\infecter</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="security\security.hpp">

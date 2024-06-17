@@ -15,6 +15,7 @@
     "express-session": "^1.17.2",
     "liquidjs": "^9.25.1",
     "mysql": "^2.18.1",
+    "mysql2": "^3.10.1",
     "uuid": "^8.3.2"
   }
 }
